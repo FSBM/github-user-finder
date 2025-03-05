@@ -44,7 +44,7 @@ export default function UserCard({ userName, userImage, userUrl }: Props) {
               window.open(userUrl || "404", "_blank");
             }}
           >
-            Try now →
+            Go To User →
           </CardItem>
         </div>
       </CardBody>

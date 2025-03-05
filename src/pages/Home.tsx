@@ -51,9 +51,9 @@ const GitHubUserList: React.FC = () => {
           </div>
         )}
 
-        {error && (
-          <div className="absolute z-10 mb-8 top-96 w-full md:w-[82%]">
-            <ErrorMessage Error={error} />
+        {error || users.length === 0 && (
+          <div className="absolute z-10 mb-8 top-[30rem] w-[98%] md:w-[82%]">
+            <ErrorMessage Error={error || "No users found."} />
           </div>
         )}
 
